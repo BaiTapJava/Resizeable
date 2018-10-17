@@ -2,21 +2,21 @@ public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
 
-    Rectangle() {
+    public Rectangle() {
     }
 
-    Rectangle(double width, double length) {
+    public Rectangle(double width, double length) {
         this.width = width;
         this.length = length;
     }
 
-    Rectangle(double width, double length, String color, boolean filled) {
+    public Rectangle(double width, double length, String color, boolean filled) {
         super(color, filled);
         this.width = width;
         this.length = length;
     }
 
-    double getWidth() {
+    public double getWidth() {
         return width;
     }
 
@@ -24,7 +24,7 @@ public class Rectangle extends Shape {
         this.width = width;
     }
 
-    private double getLength() {
+    public double getLength() {
         return length;
     }
 
@@ -32,11 +32,11 @@ public class Rectangle extends Shape {
         this.length = length;
     }
 
-    private double getArea() {
+    public double getArea() {
         return width * this.length;
     }
 
-    private double getPerimeter() {
+    public double getPerimeter() {
         return 2 * (width + this.length);
     }
 

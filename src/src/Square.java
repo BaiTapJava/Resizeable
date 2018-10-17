@@ -1,22 +1,22 @@
- class Square extends Rectangle {
-    Square() {
+public class Square extends Rectangle {
+    public Square() {
     }
 
-    Square(double side) {
+    public Square(double side) {
         super(side, side);
     }
 
-    Square(double side, String color, boolean filled) {
+    public Square(double side, String color, boolean filled) {
         super(side, side, color, filled);
     }
 
-     private double getSide() {
+    public double getSide() {
         return getWidth();
     }
 
-     private void setSide(double side) {
-        setWidth(side);
-        setLength(side);
+    public void setSide(double side) {
+        super.setWidth(side);
+        super.setLength(side);
     }
 
     @Override

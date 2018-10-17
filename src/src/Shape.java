@@ -2,27 +2,27 @@ public class Shape {
     private String color = "green";
     private boolean filled = true;
 
-    Shape() {
+    public Shape() {
     }
 
-    Shape(String color, boolean filled) {
+    public Shape(String color, boolean filled) {
         this.color = color;
         this.filled = filled;
     }
 
-    private String getColor() {
+    public String getColor() {
         return color;
     }
 
-    private void setColor(String color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
-    private boolean isFilled() {
+    public boolean isFilled() {
         return filled;
     }
 
-    private void setFilled(boolean filled) {
+    public void setFilled(boolean filled) {
         this.filled = filled;
     }
 
